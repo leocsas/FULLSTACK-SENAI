@@ -78,6 +78,7 @@ header .container {
     border-radius: 50%;
 }
 
+/* Banner de consoles */
 .hero {
     display: flex;
     justify-content: center;
@@ -105,6 +106,80 @@ header .container {
     width: 600px;
     height: 500px;
 }
+
+/* Banner de PCs Gamer */
 .hero--invertido {
     flex-direction: row-reverse;
+}
+
+/* Carrossel de Celulares */
+.carrossel {
+    padding: 20px 0;
+}
+.carrossel h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.carrossel-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 35px;
+    width: 275px;
+    height: 500px;
+    text-align: center;
+}
+.card-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card-imagem img {
+    width: 100%;
+    height: auto;
+}
+.card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #222222;
+}
+.card-preco {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: left;
+    
+}
+.preco-principal {
+    display: flex;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #3B82F6;
+}
+.preco-principal .desconto {
+    color: #ff0000;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.preco-antigo {
+    display: flex;
+    text-decoration: line-through;
+    color: #828282;
+}
+.botao-carrinho {
+    margin-top: 25px;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-bottom: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
 }
