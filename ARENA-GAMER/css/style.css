@@ -9,6 +9,8 @@ body {
     font-family: "PT Serif", serif;
     background-color: #222222;
     color: #FFFFFF;
+    margin: 0;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1200px;
@@ -83,7 +85,7 @@ header .container {
 .hero {
     display: flex;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 60px 80px;
 }
 .hero .container {
     text-align: center;
@@ -189,8 +191,7 @@ header .container {
 .catalogo {
     padding: 150px;
 }
-.catalogo h2 {
-    margin-top: 60px; 
+.catalogo h2 { 
     font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
