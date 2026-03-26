@@ -33,16 +33,17 @@ header .container {
 .header-direita {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 /* Header - Menu */
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 70px;
     list-style: none;
 }
 .menu a {
+    font-size: 20px;
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 500;
@@ -117,7 +118,7 @@ header .container {
     padding: 20px 0;
 }
 .carrossel h2 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -182,4 +183,63 @@ header .container {
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Catalogo de Jogos */
+.catalogo {
+    padding: 150px;
+}
+.catalogo h2 {
+    margin-top: 60px; 
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.jogo {
+    display: block;
+}
+.jogo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #282828;
+}
+.footer-container {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+.footer-logo {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section li {
+    margin-top: 5px;
+}
+.footer-section a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 15px;
 }
