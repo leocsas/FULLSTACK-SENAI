@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+.form-container {
+    max-width: 350px;
+    padding: 1rem;
+}
+.form-container h1 {
+    font-size: 28px;
+}
+.form-container h2 {
+    font-size: 18px;
+}
+.btn {
+    background-color: #3B82F6;
+    font-weight: bold;
+}
+.form-floating input {
+    background-color: #282828;
+    border-color: black;
+    margin-bottom: 4px;
+}
+.form-floating label {
+    color: #FFFFFF;
+}
