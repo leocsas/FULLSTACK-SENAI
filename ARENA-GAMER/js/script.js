@@ -32,4 +32,3 @@ for (let i = 0; i < adicionar.length; i++) {
     }, 1500);
 });
 }
-
