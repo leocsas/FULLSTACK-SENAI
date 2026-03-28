@@ -158,7 +158,6 @@ header .meu-container {
     flex-direction: column;
     gap: 5px;
     align-items: left;
-    
 }
 .preco-principal {
     display: flex;
@@ -186,6 +185,31 @@ header .meu-container {
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Funcionalidade Carrossel */
+.carousel-item .card {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carousel-indicators {
+    bottom: -60px; 
+}
+.carousel-indicators button {
+    width: 35px !important;
+    height: 6px !important;
+    border-radius: 10px;
+    background-color: #555 !important;
+    border: none !important;
+    transition: 0.3s;
+}
+.carousel-indicators .active {
+    background-color: #3B82F6 !important;
+    width: 50px !important;
 }
 
 /* Catalogo de Jogos */
