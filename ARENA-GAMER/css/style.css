@@ -53,6 +53,13 @@ header .meu-container {
 }
 
 /* Header - Componentes */
+.login {
+    margin-left: 20PX;
+    font-size: 13px;
+    color: #3B82F6;
+    font-weight: bold;
+    cursor: pointer;
+}
 .carrinho {
     height: 28px;
     cursor: pointer;
@@ -60,7 +67,7 @@ header .meu-container {
 .carrinho-container {
     position: relative;
     background-color: #FFF;
-    border-radius: 30%;
+    border-radius: 10px;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -70,9 +77,8 @@ header .meu-container {
     position: absolute;
     top: 20px;
     right: 1px;
-
     background-color: #3B82F6;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     width: 14px;
     height: 14px;
@@ -185,6 +191,20 @@ header .meu-container {
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
+}
+
+/* Funcionalidade Adicionar ao Carrinho */
+.mensagem-sucesso {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    z-index: 999;
 }
 
 /* Funcionalidade Carrossel */
