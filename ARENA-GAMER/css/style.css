@@ -309,3 +309,323 @@ button {
 h1, h2, h3 {
   font-weight: 700;
 }
+
+/* Responsividade */
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header */
+    header .meu-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        text-align: left;
+    }
+    .header-direita {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .login {
+        margin-left: 0;
+    }
+
+    /* Banners */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .hero--invertido {
+        flex-direction: column;
+    }
+    .hero .meu-container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .hero h2 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 38px;
+    }
+    .hero .imagem {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .hero .imagem img {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    /* Catálogo de Jogos */
+    .catalogo {
+        padding: 80px 40px;
+    }
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    .jogo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+    }
+    .footer-logo {
+        width: 100%;
+    }
+}
+
+/* Celulares e tablets pequenos */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 20px 0;
+        margin-bottom: 40px;
+    }
+    header .meu-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .header-direita {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .menu a {
+        font-size: 18px;
+    }
+    .login {
+        margin-left: 0;
+    }
+
+    /* Banners */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 15px;
+    }
+    .hero--invertido {
+        flex-direction: column;
+    }
+    .hero .meu-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .hero h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .button {
+        display: inline-block;
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+    .hero .imagem {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .hero .imagem img {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    /* Carrossel */
+    .carrossel {
+        padding: 20px 15px 50px;
+    }
+    .carrossel h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        padding: 16px;
+    }
+    .card h3 {
+        font-size: 16px;
+        line-height: 1.2;
+        min-height: 55px;
+        margin: 10px 0;
+    }
+    .card-imagem img {
+        max-width: 95px;
+        height: auto;
+    }
+    .preco-principal {
+        font-size: 16px;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .preco-principal .desconto {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    .preco-antigo {
+        font-size: 13px;
+    }
+    .botao-carrinho {
+        width: 100%;
+        margin-top: 16px;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    /* Catálogo de Jogos */
+    .catalogo {
+        padding: 60px 20px;
+    }
+    .catalogo h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    .jogo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+    }
+    .footer-logo {
+        width: 100%;
+        font-size: 22px;
+    }
+    .footer-section h3 {
+        justify-content: center;
+    }
+
+    /* Mensagem */
+    .mensagem-sucesso {
+        top: auto;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+        width: calc(100% - 30px);
+        max-width: 320px;
+        text-align: center;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 450px) {
+    /* Header */
+    .logo {
+        font-size: 20px;
+    }
+    .menu a {
+        font-size: 16px;
+    }
+
+    /* Banners */
+    .hero h2 {
+        font-size: 22px;
+    }
+    .carrossel h2,
+    .catalogo h2 {
+        font-size: 20px;
+    }
+    .card {
+        padding: 15px;
+        min-height: 420px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    .preco-principal {
+        font-size: 16px;
+    }
+    .preco-antigo {
+        font-size: 14px;
+    }
+    .botao-carrinho {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    /* Catálogo de Jogos */
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .catalogo {
+        padding: 40px 15px;
+    }
+    .catalogo h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .jogo img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+    }
+    .footer-logo {
+        font-size: 20px;
+    }
+    .footer-section h3 {
+        font-size: 18px;
+    }
+    .footer-section a {
+        font-size: 14px;
+    }
+}
